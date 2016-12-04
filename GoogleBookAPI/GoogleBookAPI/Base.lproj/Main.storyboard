@@ -10,7 +10,6 @@
         <!--Root View Controller-->
         <scene sceneID="Yw3-WM-fTJ">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Her-2s-CVF" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <tableViewController id="R6Y-DB-iai" customClass="BookTableViewController" customModule="GoogleBookAPI" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="210" sectionHeaderHeight="28" sectionFooterHeight="28" id="5tv-i4-lkQ">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
@@ -21,7 +20,7 @@
                                 <rect key="frame" x="0.0" y="92" width="375" height="210"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Hxd-tg-UFh" id="Nd0-3V-Ftb">
-                                    <frame key="frameInset" width="375" height="209"/>
+                                    <frame key="frameInset" width="375" height="210"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="YL5-Wy-26h">
@@ -31,7 +30,7 @@
                                         </imageView>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q8K-k4-Sdf">
                                             <constraints>
-                                                <constraint firstAttribute="height" constant="21" id="EV1-6w-JG0"/>
+                                                <constraint firstAttribute="height" constant="21" id="2Qg-Kb-dY3"/>
                                             </constraints>
                                             <fontDescription key="fontDescription" name="EuphemiaUCAS-Bold" family="Euphemia UCAS" pointSize="14"/>
                                             <color key="textColor" red="0.8787259615384615" green="0.82800921972664898" blue="0.092482592048669501" alpha="1" colorSpace="calibratedRGB"/>
@@ -40,11 +39,11 @@
                                     </subviews>
                                     <constraints>
                                         <constraint firstItem="YL5-Wy-26h" firstAttribute="leading" secondItem="Nd0-3V-Ftb" secondAttribute="leading" constant="137" id="18W-jM-p6q"/>
-                                        <constraint firstItem="q8K-k4-Sdf" firstAttribute="top" secondItem="Nd0-3V-Ftb" secondAttribute="topMargin" constant="7" id="YT0-19-uZh"/>
+                                        <constraint firstItem="YL5-Wy-26h" firstAttribute="top" secondItem="q8K-k4-Sdf" secondAttribute="bottom" constant="15" id="Ay1-im-S4Z"/>
                                         <constraint firstAttribute="bottomMargin" secondItem="YL5-Wy-26h" secondAttribute="bottom" constant="21" id="Z9j-Ec-kzj"/>
-                                        <constraint firstAttribute="trailing" secondItem="q8K-k4-Sdf" secondAttribute="trailing" id="cAW-BG-hRf"/>
-                                        <constraint firstItem="q8K-k4-Sdf" firstAttribute="leading" secondItem="Nd0-3V-Ftb" secondAttribute="leading" id="fAT-8t-7wr"/>
-                                        <constraint firstItem="YL5-Wy-26h" firstAttribute="top" secondItem="q8K-k4-Sdf" secondAttribute="bottom" constant="15" id="x2b-yU-Skn"/>
+                                        <constraint firstItem="q8K-k4-Sdf" firstAttribute="leading" secondItem="Nd0-3V-Ftb" secondAttribute="leadingMargin" constant="-18" id="bG4-7A-4FX"/>
+                                        <constraint firstItem="q8K-k4-Sdf" firstAttribute="centerX" secondItem="YL5-Wy-26h" secondAttribute="centerX" id="n9T-Zb-S0u"/>
+                                        <constraint firstItem="q8K-k4-Sdf" firstAttribute="top" secondItem="Nd0-3V-Ftb" secondAttribute="topMargin" constant="7" id="zPI-VP-3hc"/>
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
@@ -60,13 +59,13 @@
                     </tableView>
                     <navigationItem key="navigationItem" title="Root View Controller" id="yHg-eT-Oh3"/>
                 </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Her-2s-CVF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="149.59999999999999" y="80.50974512743629"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="pRm-Kv-wlg">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="fIZ-ic-EFA" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <navigationController id="SbO-Xp-Uln" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Q6X-tH-JCm">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
@@ -76,6 +75,7 @@
                         <segue destination="R6Y-DB-iai" kind="relationship" relationship="rootViewController" id="uaY-fy-odo"/>
                     </connections>
                 </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fIZ-ic-EFA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-615" y="81"/>
         </scene>

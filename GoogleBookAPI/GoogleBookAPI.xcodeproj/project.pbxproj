@@ -344,6 +344,7 @@
 				CCBD80671DF409C300EE851F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
